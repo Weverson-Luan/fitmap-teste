@@ -34,7 +34,7 @@
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>RCTNewArchEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -56,5 +56,24 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>OpenSans_400Regular.ttf</string>
+		<string>Montserrat_700Bold.ttf</string>
+		<string>Montserrat_100Thin.ttf</string>
+		<string>OpenSans_700Bold.ttf</string>
+		<string>OpenSans_600SemiBold.ttf</string>
+		<string>Roboto_500Medium.ttf</string>
+		<string>Montserrat_500Medium.ttf</string>
+		<string>OpenSans_500Medium.ttf</string>
+		<string>NunitoSans_700Bold.ttf</string>
+		<string>Roboto_400Regular.ttf</string>
+		<string>OpenSans_300Light.ttf</string>
+		<string>Montserrat_400Regular.ttf</string>
+		<string>Montserrat_600SemiBold.ttf</string>
+		<string>NunitoSans_400Regular.ttf</string>
+		<string>Roboto_700Bold.ttf</string>
+		<string>NunitoSans_600SemiBold.ttf</string>
+	</array>
 </dict>
 </plist>

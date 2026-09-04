@@ -36,6 +36,7 @@ Use `<nome-da-feature>` em kebab-case, prefixado pelo módulo quando fizer senti
 |---|---|---|
 | [`auth-signin`](auth-signin) | auth | ✅ exemplo de referência (completo) |
 | [`shared-http-client`](shared-http-client) | shared | ✅ completo |
+| [`shared-styling-setup`](shared-styling-setup) | shared | ✅ completo |
 
 ## Backlog (a especificar)
 

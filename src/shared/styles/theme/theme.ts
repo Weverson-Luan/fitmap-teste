@@ -56,6 +56,10 @@ const colors = {
   yellow_500: "#FBBF24",
 };
 
+// Nome de cada fonte = arquivo .ttf correspondente em `src/assets/fonts`
+// (linkado nativamente via `react-native.config.js` + `react-native-asset`).
+// O mesmo mapeamento existe em `tailwind.config.js` (theme.extend.fontFamily),
+// pra uso via `className` (NativeWind) — atualize os dois arquivos juntos.
 const fonts = {
   // =====================
   // Montserrat (principal)

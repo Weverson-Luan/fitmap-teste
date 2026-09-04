@@ -1,0 +1,73 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Montserrat_100Thin.ttf",
+      "sha1": "550e6e1d992369e97e9f00aa71ae482a6a6326d7"
+    },
+    {
+      "path": "src/assets/fonts/Montserrat_400Regular.ttf",
+      "sha1": "ec13ef1f2c99f8780d6f2eb3f9f27ef89f30161b"
+    },
+    {
+      "path": "src/assets/fonts/Montserrat_500Medium.ttf",
+      "sha1": "77f3553415d858c653baea45aacab20196776334"
+    },
+    {
+      "path": "src/assets/fonts/Montserrat_600SemiBold.ttf",
+      "sha1": "79f74616d68b87d6cf89798fe72259036326567a"
+    },
+    {
+      "path": "src/assets/fonts/Montserrat_700Bold.ttf",
+      "sha1": "be7c1438070ab637e11716915e4e50903726dcc8"
+    },
+    {
+      "path": "src/assets/fonts/NunitoSans_400Regular.ttf",
+      "sha1": "9f61da85b1160fb0ca306a30c7a5b26e6d89c4b5"
+    },
+    {
+      "path": "src/assets/fonts/NunitoSans_600SemiBold.ttf",
+      "sha1": "15a192c2cf6754016dca040bb92712ddff16b203"
+    },
+    {
+      "path": "src/assets/fonts/NunitoSans_700Bold.ttf",
+      "sha1": "5f7aaebe62f05f995ad87bc937ed95c7985452de"
+    },
+    {
+      "path": "src/assets/fonts/OFL.txt",
+      "sha1": "162d8e689d96c71dca84dfb06505d7560c9d34ac"
+    },
+    {
+      "path": "src/assets/fonts/OpenSans_300Light.ttf",
+      "sha1": "6236023a78c3031a26e7093881cceeae50ad036f"
+    },
+    {
+      "path": "src/assets/fonts/OpenSans_400Regular.ttf",
+      "sha1": "576aa669c4ceb3830fde859a4db52916def172af"
+    },
+    {
+      "path": "src/assets/fonts/OpenSans_500Medium.ttf",
+      "sha1": "1632123e8a78dd095fb987c0cb2ad05063e0648a"
+    },
+    {
+      "path": "src/assets/fonts/OpenSans_600SemiBold.ttf",
+      "sha1": "344041aeaad9e07a186cc3a937df915e5d98936f"
+    },
+    {
+      "path": "src/assets/fonts/OpenSans_700Bold.ttf",
+      "sha1": "c7e6b913f990299fcc5928f4581727972e869727"
+    },
+    {
+      "path": "src/assets/fonts/Roboto_400Regular.ttf",
+      "sha1": "cb6cc5710764b9f06b8d8c923f961e3c1ceb7a59"
+    },
+    {
+      "path": "src/assets/fonts/Roboto_500Medium.ttf",
+      "sha1": "f81633398187756a347bc6d43aad7a8fc356171b"
+    },
+    {
+      "path": "src/assets/fonts/Roboto_700Bold.ttf",
+      "sha1": "3e455f517354a45807648fbd3d71adbab2f4e905"
+    }
+  ]
+}
