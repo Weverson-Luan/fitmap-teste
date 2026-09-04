@@ -1,5 +1,25 @@
 {
   "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    // Aliases de import — mantidos em sincronia com `babel.config.js`
+    // (babel-plugin-module-resolver) e `moduleNameMapper` (jest.config.js).
+    // Sem `baseUrl`: a partir do TS 6, `paths` já resolve relativo ao
+    // próprio tsconfig.json (`baseUrl` está deprecado).
+    "paths": {
+      "@modules/*": ["./src/modules/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@presentation/*": ["./src/shared/presentation/*"],
+      "@store/*": ["./src/shared/store/*"],
+      "@data/*": ["./src/shared/data/*"],
+      "@libs/*": ["./src/shared/libs/*"],
+      "@styles/*": ["./src/shared/styles/*"],
+      "@utils/*": ["./src/shared/utils/*"],
+      "@config/*": ["./src/shared/config/*"],
+      "@types/*": ["./src/shared/@types/*"],
+      "@common/*": ["./src/shared/common/*"]
+    }
+  },
   "include": [
     "**/*.ts",
     "**/*.tsx",
