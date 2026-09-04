@@ -1,0 +1,23 @@
+---
+description: Regras de arquitetura modular do FitMap (fronteiras entre módulos e camadas internas)
+globs:
+alwaysApply: true
+---
+
+# Arquitetura do FitMap
+
+Arquitetura modular em camadas. Diagramas completos: [README.md](mdc:README.md). Contexto geral: [CLAUDE.md](mdc:CLAUDE.md).
+
+- Módulos de negócio vivem em `src/modules/<modulo>` (`auth`, `students`, `personals`, `map`). Código reaproveitável entre módulos vive em `src/shared`.
+- Camadas dentro de um módulo (e de `src/shared`): `data/{http,infra/repositories}`, `presentation/{components,view-model,views}`, `store`.
+- Fluxo de dependência: `views → view-model → (store | infra/repositories) → http`.
+
+## Regras de fronteira (não negociáveis)
+
+1. Um módulo em `src/modules` **nunca** importa de outro módulo em `src/modules`. Somente de `src/shared`.
+2. Comunicação entre módulos passa por `shared/store`, parâmetros de `shared/presentation/routes`, ou um contrato em `shared/@types` — nunca por import direto entre módulos.
+3. `views` não chama rede diretamente. Toda chamada de API passa por `data/infra/repositories`, que usa `data/http`.
+4. Regra de negócio e estado de tela ficam na `view-model`; a view só renderiza o que a view-model expõe.
+5. Antes de criar algo novo dentro de um módulo, verifique se já existe equivalente em `src/shared` para não duplicar.
+
+Se seguir essas regras exigiria contorná-las para completar uma tarefa, pare e avise em vez de violar silenciosamente.

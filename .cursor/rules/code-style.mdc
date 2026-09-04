@@ -1,0 +1,16 @@
+---
+description: Convenções de código TypeScript/React Native do FitMap
+globs: ["**/*.ts", "**/*.tsx"]
+alwaysApply: false
+---
+
+# Convenções de código
+
+- TypeScript em tudo; evite `any` — prefira tipar via `src/shared/@types` quando o tipo for usado por mais de um módulo.
+- Formatação: Prettier (`.prettierrc.js` — aspas simples, `trailingComma: all`, `arrowParens: avoid`). Lint: ESLint (`@react-native/eslint-config`). Não reformate código fora do escopo da tarefa atual.
+- **Arquivos e pastas**: `kebab-case` com extensão, ex. `signin-view.tsx`, `use-signin-view-model.ts`. O identificador exportado por um componente é que vira `PascalCase` (ex. `signin-view.tsx` exporta `function SigninView()`), o nome do arquivo não.
+- **Variáveis e funções**: `camelCase`. Funções de busca/ação começam com o verbo: `getAllUser`, `getUserById`, `updateUser`, `deleteUser`. Variáveis de dados de entidade usam o sufixo `Data`: `userData`, `studentData`, `personalData`.
+- **Hooks**: `camelCase` prefixados com `use` (ex. `useSigninViewModel`).
+- Não introduza uma nova lib de estado/HTTP/navegação sem checar o que já existe em `package.json` e em `src/shared` — uma única forma de fazer cada coisa no projeto.
+- Sem alias de import configurado em `tsconfig.json` ainda — use imports relativos; não adicione um alias unilateralmente.
+- Testes com Jest + `react-test-renderer`. Priorize testar `view-model` e `infra/repositories` (lógica pura) antes de `views`.

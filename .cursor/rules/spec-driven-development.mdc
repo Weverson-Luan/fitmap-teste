@@ -1,0 +1,17 @@
+---
+description: Fluxo obrigatório de Spec-Driven Development antes de implementar features
+globs:
+alwaysApply: true
+---
+
+# Spec-Driven Development
+
+Antes de implementar uma feature nova, ou uma mudança relevante em uma existente, spec primeiro, código depois.
+
+1. Procure uma spec em `specs/<nome-da-feature>/`. Se não existir, crie a partir de `specs/_template/` (nessa ordem: `requirements.md` → `design.md` → `tasks.md`).
+2. Não escreva código de produção para a feature sem `requirements.md` e `design.md` minimamente preenchidos e alinhados com quem pediu.
+3. Implemente seguindo o `tasks.md` da spec; ao concluir uma tarefa, marque o checkbox correspondente.
+4. Toda spec e toda implementação respeitam as regras em [specs/constitution.md](mdc:specs/constitution.md).
+5. Exemplo de referência já preenchido: [specs/auth-signin](mdc:specs/auth-signin/requirements.md).
+
+Processo completo: [specs/README.md](mdc:specs/README.md).
